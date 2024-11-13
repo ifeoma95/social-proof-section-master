@@ -1,0 +1,199 @@
+root {
+  /* Colors */
+  --color-primary-dark-magenta: hsl(300, 47%, 25%);
+  --color-primary-soft-pink: hsl(333, 80%, 67%);
+
+  --color-neutral-dark-grayish-magenta: hsl(303, 10%, 53%);
+  --color-neutral-light-grayish-magenta: hsl(300, 24%, 96%);
+  --color-neutral-white: hsl(0, 0%, 100%);
+
+  /* Typography */
+  --font-body-size: 15px;
+  --font-family: "League Spartan", sans-serif;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  /* Responsive Breakpoints */
+  --mobile-width: 375px;
+  --desktop-width: 1440px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(./images/bg-pattern-top-desktop.svg),
+    url(./images/bg-pattern-bottom-desktop.svg);
+  background-position: top right, bottom left;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--font-family);
+  font-size: 15px;
+}
+
+.product-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.product-heading h1 {
+  text-align: center;
+  margin: 1.5em 2em;
+  color: rgb(106, 3, 106);
+  font-size: 3rem;
+  font-weight: var(--font-weight-bold);
+}
+
+.product-heading p {
+  text-align: center;
+  padding-left: 20px;
+  padding-bottom: 20px;
+  color: var(--color-neutral-dark-grayish-magenta);
+  font-size: 1rem;
+  font-weight: var(--font-weight-regular);
+  font-family: "League Spartan";
+  padding-bottom: 50px;
+}
+
+.rating {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.rating_stars {
+  padding: 20px 20px;
+  border-radius: 10px;
+  border: 1px solid red;
+  margin-top: 20px;
+}
+/*
+        display: flex;
+        flex-direction: row;
+        box-sizing: border-box;
+        border: 2px solid red;
+        gap: 10px;
+       width: 50%;
+       height: 50%;
+        margin: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+        align-items: center;
+        overflow: hidden;
+       */
+
+.ratingstars p {
+  position: relative;
+  top: 20px;
+  right: 25px;
+  left: 25px;
+  padding-top: 20px;
+}
+
+.reviews {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 100px;
+  gap: 20px;
+  color: rgb(209, 202, 202);
+
+  align-items: center;
+  justify-content: center;
+}
+
+.review {
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  border: 1px solid rgb(233, 242, 245);
+  padding: 20px;
+  max-width: 375px;
+  background-color: rgb(72, 4, 72);
+  font-family: var(--font-family);
+}
+.profile {
+  display: flex;
+}
+
+.review img {
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+}
+
+.review h3 {
+  padding: 10px 20px;
+  font-weight: 400;
+}
+.customer {
+  text-align: center;
+  margin-bottom: 10px;
+  font-size: 14px;
+  position: relative;
+  bottom: 10px;
+  right: 30px;
+  color: rgb(185, 7, 185);
+
+  text-transform: uppercase;
+}
+/*
+       background-position: top right, bottom left;
+       background-size: cover;
+       font-family: var(--font-family);
+
+    }
+    .product-heading{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .product-heading h1{
+        text-align: center;
+        margin: 1.5em 2em;
+        color: rgb(106, 3, 106);
+        font-size: 2rem;
+        font-weight: var(--font-weight-bold);
+    }
+
+    .product-heading p{
+        text-align: center;
+        padding-bottom: 20px;
+        color: var(--color-neutral-dark-grayish-magenta);
+        font-size: 1rem;
+        font-weight: var(--font-weight-regular);
+        font-family:'League Spartan';
+
+    }
+   
+        
+     .rating__stars::before{
+        content: "\2605 \2605 \2605 \2605 \2605";
+        color: rgb(225, 163, 20);
+        font-size: 1rem;
+        
+        
+        
+    }
+
+    .rating__stars{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+        align-items: center;
+        
+        
+    }
+        */
